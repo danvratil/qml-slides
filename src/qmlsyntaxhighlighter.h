@@ -1,4 +1,3 @@
-/**
 /*
  *   Copyright (C) 2013 Daniel Vrátil <dan@progdan.cz>
  *

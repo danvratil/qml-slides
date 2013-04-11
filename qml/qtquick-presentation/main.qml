@@ -43,7 +43,7 @@ Item {
 
         model: [
             "010_title.qml",
-            "990_questions.qml"
+            "999_end.qml"
         ]
 
         delegate: SlideDelegate {

@@ -43,7 +43,15 @@ Item {
 
         model: [
             "010_title.qml",
-            "990_questions.qml"
+            "020_whatisqml.qml",
+            "030_qml.qml",
+            "035_components.qml",
+            "036_components2.qml",
+            "040_properties.qml",
+            "050_components3.qml",
+            "060_signals.qml",
+            "070_functions.qml",
+            "999_end.qml"
         ]
 
         delegate: SlideDelegate {

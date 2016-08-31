@@ -6,3 +6,7 @@ SOURCES += \
 
 OTHER_FILES += images/* \
                qml/*
+
+DISTFILES += \
+    qml/TransitionAnimation.qml \
+    qml/Slide.qml

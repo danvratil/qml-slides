@@ -1,5 +1,4 @@
 import QtQuick 2.0
-import Qt.labs.presentation 1.0
 import QtGraphicalEffects 1.0
 
 
@@ -59,10 +58,11 @@ Slide {
         id: source;
         anchors {
             top: parent.isAnimated ? animatedImage.bottom : image.bottom
-            left: parent.isAnimated ? animatedImage.left : image.left
+            horizontalCenter: parent.isAnimated ? animatedImage.horizontalCenter : image.horizontalCenter
             topMargin: 10
         }
+        font.pixelSize: 15
         visible: parent.source !== ""
-        text: "Zdroj: " + parent.source
+        text: parent.source
     }
 }

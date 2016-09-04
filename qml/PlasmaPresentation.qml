@@ -29,15 +29,15 @@ Presentation
         id: backwardTransition
         running: false
         PropertyAction { target: deck; property: "inTransition"; value: true }
-        PropertyAction { target: toSlide; property: "visible"; value: true }
+        PropertyAction { target: deck.toSlide; property: "visible"; value: true }
         ParallelAnimation {
-            NumberAnimation { target: fromSlide; property: "opacity"; from: 1; to: 0; duration: deck.transitionTime; easing.type: Easing.OutQuart }
-            NumberAnimation { target: fromSlide; property: "scale"; from: 1; to: 0.7; duration: deck.transitionTime; easing.type: Easing.InOutQuart }
-            NumberAnimation { target: toSlide; property: "opacity"; from: 0; to: 1; duration: deck.transitionTime; easing.type: Easing.InQuart }
-            NumberAnimation { target: toSlide; property: "scale"; from: 1.1; to: 1; duration: deck.transitionTime; easing.type: Easing.InOutQuart }
+            NumberAnimation { target: deck.romSlide; property: "opacity"; from: 1; to: 0; duration: deck.transitionTime; easing.type: Easing.OutQuart }
+            NumberAnimation { target: deck.fromSlide; property: "scale"; from: 1; to: 0.7; duration: deck.transitionTime; easing.type: Easing.InOutQuart }
+            NumberAnimation { target: deck.toSlide; property: "opacity"; from: 0; to: 1; duration: deck.transitionTime; easing.type: Easing.InQuart }
+            NumberAnimation { target: deck.toSlide; property: "scale"; from: 1.1; to: 1; duration: deck.transitionTime; easing.type: Easing.InOutQuart }
         }
-        PropertyAction { target: fromSlide; property: "visible"; value: false }
-        PropertyAction { target: fromSlide; property: "scale"; value: 1 }
+        PropertyAction { target: deck.fromSlide; property: "visible"; value: false }
+        PropertyAction { target: deck.fromSlide; property: "scale"; value: 1 }
         PropertyAction { target: deck; property: "inTransition"; value: false }
     }
 

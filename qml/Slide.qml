@@ -4,5 +4,6 @@ import Qt.labs.presentation 1.0 as Presentation
 Presentation.Slide
 {
     property bool animateTransition: true
+    property bool hasBackground: true
 }
 

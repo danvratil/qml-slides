@@ -1,0 +1,3 @@
+[submodule "qt-labs-qml-presentation-system"]
+	path = qml-presentation-system
+	url = https://github.com/qt-labs/qml-presentation-system.git
